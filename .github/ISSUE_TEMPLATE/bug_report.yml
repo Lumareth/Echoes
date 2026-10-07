@@ -1,0 +1,60 @@
+name: Bug report
+description: Report a reproducible problem with Echoes.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Echoes. Please remove private information from logs before uploading them.
+  - type: input
+    id: echoes-version
+    attributes:
+      label: Echoes version
+      placeholder: Example: 0.9.0 for Minecraft 1.21.11
+    validations:
+      required: true
+  - type: input
+    id: minecraft-version
+    attributes:
+      label: Minecraft and Fabric Loader versions
+      placeholder: Minecraft 1.21.11, Fabric Loader 0.19.5
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Run /echo record
+        2. ...
+        3. Run /echo stop
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or crash report
+      description: Drag the latest.log or crash report here. Do not paste account tokens or other secrets.
+  - type: textarea
+    id: mods
+    attributes:
+      label: Other installed mods
+      description: List other mods that may help reproduce the problem.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I checked that this bug has not already been reported.
+          required: true
+        - label: I tested with the newest available Echoes build.
+          required: true

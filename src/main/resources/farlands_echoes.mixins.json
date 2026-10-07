@@ -1,0 +1,27 @@
+{
+	"required": true,
+	"package": "com.farlandsechoes.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"AbstractBoatMixin",
+		"AbstractArrowMixin",
+		"AbstractHurtingProjectileMixin",
+		"AbstractMinecartMixin",
+		"EntityAccessor",
+		"EntityMixin",
+		"KineticWeaponMixin",
+		"LivingEntityMixin",
+		"MannequinAccessor",
+		"PlayerAccessor",
+		"PlayerIdentityMixin",
+		"ProjectileMixin",
+		"ServerGamePacketListenerMixin",
+		"ServerPlayerIdentityMixin",
+		"ServerPlayerGameModeAccessor",
+		"ThrowableProjectileMixin",
+		"VehicleEntityMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

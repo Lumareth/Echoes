@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "com.farlandsechoes.client.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"AbstractClientPlayerMixin",
+		"AvatarRendererMixin",
+		"ClientPlayerNameMixin",
+		"EntityRendererMixin",
+		"EntityHitboxDebugRendererMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

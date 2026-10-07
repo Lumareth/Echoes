@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "farlands_echoes",
+	"version": "${version}",
+	"name": "Echoes",
+	"description": "Record players and loop their movement, interactions, world changes, and projectiles as echoes.",
+	"authors": [
+		"Lumareth"
+	],
+	"contact": {
+		"homepage": "https://github.com/Lumareth/Echoes",
+		"sources": "https://github.com/Lumareth/Echoes",
+		"issues": "https://github.com/Lumareth/Echoes/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/farlands_echoes/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.farlandsechoes.FarlandsEchoes"
+		],
+		"client": [
+			"com.farlandsechoes.client.FarlandsEchoesClient"
+		]
+	},
+	"mixins": [
+		"farlands_echoes.mixins.json",
+		{
+			"config": "farlands_echoes.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
